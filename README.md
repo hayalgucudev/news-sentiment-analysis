@@ -32,11 +32,35 @@ news-sentiment-analysis/
 └── README.md                # Project documentation [cite: 84]
 
 
-##Setup Instructions
+## Setup Instructions
 
-1. Environment and Version ControlRepository: Hosted on GitHub with a specific task-1 and task-2 branch workflow.  Virtual Environment: A Python virtual environment is used to manage dependencies listed in requirements.txt. 
- CI/CD: Configured via GitHub Actions to run automated tests on every push.  Workflow: Commits are made at least three times a day using descriptive messages following Conventional Commits.  
+### 1. Environment and Version ControlRepository:
+ * Hosted on GitHub with a specific task-1 and task-2 branch workflow. 
+ * Virtual Environment: 
+ A Python virtual environment is used to manage dependencies listed in requirements.txt. 
+ **CI/CD**: 
+ * Configured via GitHub Actions to run automated tests on every push.  
+ **Workflow**: 
+ * Commits are made at least three times a day using descriptive messages following Conventional Commits.  
 
- 2. Exploratory Data Analysis (Task 1)The analysis uncovered patterns in the Financial News and Stock Price Integration Dataset (FNSPID):  Descriptive Statistics: Obtained character count distributions for headlines and active article counts per publisher.  Publication Trends: Analyzed news volume spikes to relate them to market events.  Topic Modeling: Utilized NLP techniques (TF-IDF/LDA) to extract significant recurring themes like "earnings beat" or "price target".  Publisher Analysis: Characterized coverage and extracted unique domains from email-based publisher names.  
+ ### 2. Exploratory Data Analysis (Task 1)
+ * The analysis uncovered patterns in the Financial News and **Stock Price Integration Dataset (FNSPID)**:  
+ **Descriptive Statistics**: 
+ * Obtained character count distributions for headlines and active article counts per publisher. 
+**Publication Trends**:
+* Analyzed news volume spikes to relate them to market events.  **Topic Modeling**: 
+ * Utilized NLP techniques (TF-IDF/LDA) to extract significant recurring themes like "earnings beat" or "price target".  
+ **Publisher Analysis**:
+ * Characterized coverage and extracted unique domains from email-based publisher names.  
  
- 3. Technical Indicators (Task 2 - Initial Progress)Quantitative analysis using YFinance and TA-Lib:  Data Preparation: Cleaned and correctly typed daily trading data (Open, High, Low, Close, Volume).  Moving Averages: Implemented Simple Moving Average (SMA) and Exponential Moving Average (EMA).  Visualizations: Closing prices are overlaid with moving averages to detect trend shifts.  Technologies UsedData Science: Pandas, Scikit-learn, TA-Lib, PyNance.  NLP: TextBlob, NLTK (VADER).  Environment: GitHub, GitHub Actions (CI/CD), Jupyter Notebooks.
+ ### 3. Technical Indicators (Task 2 - Initial Progress)
+ 
+ * Quantitative analysis using YFinance and TA-Lib: 
+  **Data Preparation**: 
+  Cleaned and correctly typed daily trading data (Open, High, Low, Close, Volume). 
+  **Moving Averages**: 
+  Implemented Simple **Moving Average (SMA)** and Exponential Moving Average (EMA). 
+**Visualizations**: 
+Closing prices are overlaid with moving averages to detect trend shifts.  
+**Technologies UsedData Science**: 
+* Pandas, Scikit-learn, TA-Lib, PyNance.  NLP: TextBlob, NLTK (VADER).  Environment: GitHub, GitHub Actions (CI/CD), Jupyter Notebooks.
