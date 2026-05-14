@@ -1,68 +1,138 @@
-# News Sentiment Analysis - Nova Financial Solutions
+# FILE 1: README.md
+
+````markdown
+# Financial News Sentiment Analysis and Stock Market Correlation
 
 ## Project Overview
-* **Challenge Context**: This project is part of the 10 Academy Artificial Intelligence Mastery challenge.
-* **Role**: You are a Data Analyst at **Nova Financial Solutions**, a forward-thinking financial intelligence company.
-* **Objective**: The primary task is to conduct a rigorous analysis of financial news to enhance predictive analytics and forecasting accuracy.
-* **Task Scope**: The pipeline involves quantifying sentiment in headlines, computing technical indicators from price data, and measuring their statistical relationship.
-* **Strategic Goal**: These insights form the basis of investment strategies that use news sentiment as a predictive tool for stock market trends.
 
-## Interim Status (As of May 10, 2026)
-* **Submission Deadline**: This interim submission is prepared for the Sunday, May 10, 2026, deadline at 8:00 PM UTC.
-* **Completed Work**: This repository contains the completed Task 1 (Exploratory Data Analysis) and initial progress on Task 2 (Technical Indicators).
+This project analyzes financial news headlines and historical stock market data to investigate the relationship between news sentiment and stock price movements. The project combines Natural Language Processing (NLP), Exploratory Data Analysis (EDA), and quantitative financial analysis techniques.
+
+The main objective is to support predictive analytics and provide insight into how financial news sentiment may influence stock market behavior.
+
+---
+
+## Business Objective
+
+Nova Financial Solutions aims to improve predictive analytics capabilities by analyzing financial news sentiment alongside historical stock market data.
+
+This project helps investment teams:
+
+- identify sentiment trends
+- analyze stock volatility
+- compare company performance
+- investigate sentiment-return relationships
+- support data-driven investment decisions
+
+---
+
+## Tasks Completed
+
+### Task 1: Exploratory Data Analysis
+
+- Headline analysis
+- Publisher analysis
+- Time-series news analysis
+- TF-IDF keyword extraction
+- Visualization of news patterns
+
+### Task 2: Quantitative Financial Analysis
+
+- Individual stock analysis
+- SMA
+- EMA
+- RSI
+- MACD
+- Volatility analysis
+- Correlation heatmaps
+- Multi-stock comparison
+
+### Task 3: Sentiment and Correlation Analysis
+
+- Sentiment extraction using TextBlob
+- Daily sentiment aggregation
+- Daily return calculation
+- Sentiment-return correlation analysis
+- Multi-company comparative analysis
+
+---
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- TextBlob
+- TA-Lib
+- Jupyter Notebook
+- GitHub Actions
 
 ---
 
 ## Project Structure
-The project follows a modular directory structure designed for professional development and reproducibility:
 
 ```text
 news-sentiment-analysis/
-├── .github/workflows/       # CI/CD pipelines (unittests.yml)
-├── data/raw/                # Storage for raw FNSPID and YFinance data
-├── notebooks/               # Analysis and visualization notebooks
-│   ├── task_1_eda.ipynb     # Completed EDA with insights
-│   └── task_2_indicators.ipynb # Technical indicators implementation
-├── src/                     # Source code for modular programming
-├── scripts/                 # Utility scripts for data processing
-├── tests/                   # Automated unit tests
-├── requirements.txt         # Project dependencies
-└── README.md                # Project documentation
+│
+├── data/
+├── notebooks/
+├── src/
+├── tests/
+├── .github/workflows/
+├── requirements.txt
+├── README.md
+└── .gitignore
+````
 
-Setup Instructions
+---
 
-1. Environment and Version Control
-Repository: Hosted on GitHub with a specific task-1 and task-2 branch workflow.
+## Installation
 
-Virtual Environment: A Python virtual environment is used to manage dependencies listed in requirements.txt.
+Clone repository:
 
-CI/CD: Configured via GitHub Actions to run automated tests on every push.
+```powershell
+git clone <repository-url>
+```
 
-Workflow: Commits are made at least three times a day using descriptive messages following Conventional Commits.
+Create virtual environment:
 
-2. Exploratory Data Analysis (Task 1)
-The analysis uncovered patterns in the Financial News and Stock Price Integration Dataset (FNSPID):
+```powershell
+python -m venv venv
+```
 
-Descriptive Statistics: Obtained character count distributions for headlines and active article counts per publisher.
+Activate environment:
 
-Publication Trends: Analyzed news volume spikes to relate them to market events.
+```powershell
+venv\Scripts\activate
+```
 
-Topic Modeling: Utilized NLP techniques (TF-IDF/LDA) to extract significant recurring themes like "earnings beat" or "price target".
+Install dependencies:
 
-Publisher Analysis: Characterized coverage and extracted unique domains from email-based publisher names.
+```powershell
+pip install -r requirements.txt
+```
 
-3. Technical Indicators (Task 2 - Initial Progress)
-Quantitative analysis using YFinance and TA-Lib:
+---
 
-Data Preparation: Cleaned and correctly typed daily trading data (Open, High, Low, Close, Volume).
+## Running the Project
 
-Moving Averages: Implemented Simple Moving Average (SMA) and Exponential Moving Average (EMA).
+Launch Jupyter Notebook:
 
-Visualizations: Closing prices are overlaid with moving averages to detect trend shifts.
+```powershell
+jupyter notebook
+```
 
-Technologies Used
-Data Science: Pandas, Scikit-learn, TA-Lib, PyNance.
+Open notebooks from the `notebooks/` folder.
 
-NLP: TextBlob, NLTK (VADER).
+---
 
-Environment: GitHub, GitHub Actions (CI/CD), Jupyter Notebooks.
+## Key Findings
+
+* Financial news sentiment showed measurable relationships with stock returns.
+* Technology stocks demonstrated varying volatility patterns.
+* Correlation analysis revealed strong relationships among major technology companies.
+* NLP techniques successfully extracted sentiment information from financial headlines.
+* Comparative analysis highlighted differences in market sensitivity to news sentiment.
+
