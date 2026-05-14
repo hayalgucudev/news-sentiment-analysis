@@ -1,9 +1,9 @@
-# FILE 1: README.md
+FILE 1: README.md
 
 ````markdown
-# Financial News Sentiment Analysis and Stock Market Correlation
+Financial News Sentiment Analysis and Stock Market Correlation
 
-## Project Overview
+Project Overview
 
 This project analyzes financial news headlines and historical stock market data to investigate the relationship between news sentiment and stock price movements. The project combines Natural Language Processing (NLP), Exploratory Data Analysis (EDA), and quantitative financial analysis techniques.
 
@@ -11,7 +11,7 @@ The main objective is to support predictive analytics and provide insight into h
 
 ---
 
-## Business Objective
+ Business Objective
 
 Nova Financial Solutions aims to improve predictive analytics capabilities by analyzing financial news sentiment alongside historical stock market data.
 
@@ -25,9 +25,9 @@ This project helps investment teams:
 
 ---
 
-## Tasks Completed
+ Tasks Completed
 
-### Task 1: Exploratory Data Analysis
+ Task 1: Exploratory Data Analysis
 
 - Headline analysis
 - Publisher analysis
@@ -35,7 +35,7 @@ This project helps investment teams:
 - TF-IDF keyword extraction
 - Visualization of news patterns
 
-### Task 2: Quantitative Financial Analysis
+ Task 2: Quantitative Financial Analysis
 
 - Individual stock analysis
 - SMA
@@ -46,7 +46,7 @@ This project helps investment teams:
 - Correlation heatmaps
 - Multi-stock comparison
 
-### Task 3: Sentiment and Correlation Analysis
+ Task 3: Sentiment and Correlation Analysis
 
 - Sentiment extraction using TextBlob
 - Daily sentiment aggregation
@@ -55,8 +55,7 @@ This project helps investment teams:
 - Multi-company comparative analysis
 
 ---
-
-## Technologies Used
+ Technologies Used
 
 - Python
 - Pandas
@@ -71,7 +70,7 @@ This project helps investment teams:
 
 ---
 
-## Project Structure
+ Project Structure
 
 ```text
 news-sentiment-analysis/
@@ -88,7 +87,7 @@ news-sentiment-analysis/
 
 ---
 
-## Installation
+ Installation
 
 Clone repository:
 
@@ -116,7 +115,7 @@ pip install -r requirements.txt
 
 ---
 
-## Running the Project
+ Running the Project
 
 Launch Jupyter Notebook:
 
@@ -128,7 +127,7 @@ Open notebooks from the `notebooks/` folder.
 
 ---
 
-## Key Findings
+ Key Findings
 
 * Financial news sentiment showed measurable relationships with stock returns.
 * Technology stocks demonstrated varying volatility patterns.
